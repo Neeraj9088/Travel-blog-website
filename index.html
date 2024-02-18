@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="overflow-x-hidden">
+    <div class="bgimage vh-100 overflow-hidden">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+                <!-- logo -->
+              <a class="navbar-brand fs-4" href="#">Travel Guide</a>
+              <!-- toggle btn -->
+              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- SideBar -->
+                <div class="sideebarr offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+               
+                    <!-- SideBar Header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                        <!-- Sidebar boDy -->
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Packages
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Honeymoon</a></li>
+                                                <li><a class="dropdown-item" href="#">Kerala</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">North India</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Transport</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hotels</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blogs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                </div>
+            </div>
+        </nav>
+        <!-- modal trigger -->
+        <div class="container overflow-x-hidden">
+            <div class="text-center">
+                <!-- <h2>Plan your Vacation</h2> -->
+                <button class="btn btn-light position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                    Enquiry
+                </button>
+            </div>    
+        </div>
+        <!-- <div class="btn position-absolute top-50 start-50 translate-middle">
+            <button type="button" class="btn btn-light">Enquiry</button>
+        </div> -->
+
+        <!-- modal itself -->
+
+        <div class="modal fade " id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Share Your Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Name</span>
+                            <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                            <input type="email" class="form-control"  aria-label="Useremail" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Phone Number</span>
+                            <input type="phonenumber" class="form-control"  aria-label="Pnumber" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Number Of Members</span>
+                            <input type="number" class="form-control"  aria-label="Pnumber" aria-describedby="basic-addon1">
+                          </div>
+                          
+                          <div class="input-group">
+                            <span class="input-group-text">Messages</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-dark " style="margin-left: 200px; margin-top: 20px; margin-bottom: 20px;">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card -->
+    <div class="container-fluid px-0 mx-0">
+        <div class="leftover ">
+            <p class="hnymn">-HoneyMoon Packages-</p>
+            <div class="row " style="margin-top: 30px; ">
+                <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: #07102e7e;">
+                    <img src="images/pexels-godson-bright-962464.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Kerala</h5>
+                      <p class="card-text text-danger text-center"> (04 Nights / 05 Days)</p>
+                      <p class="card-text text-center" style="color: rgb(149, 144, 134);">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center" >Book Now</a>
+                    </div>
+                </div>
+                <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496);">
+                    <img src="images/pexels-asad-photo-maldives-1320684.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top  rounded" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Maldives</h5>                     
+                      <p class="card-text text-danger text-center"> (05 Nights / 06 Days)</p>
+                      <p class="card-text text-center" style="color: rgb(149, 144, 134);">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center" >Book Now</a>
+                    </div>
+                </div>
+                <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496);" >
+                    <img src="images/pexels-julia-volk-5205097.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top  rounded" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Manali</h5>
+                      <p class="card-text text-danger text-center"> (07 Nights / 08 Days)</p>
+                      <p class="card-text text-center" style="color: rgb(149, 144, 134) ;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center" >Book Now</a>
+                    </div>
+                </div>
+                <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496); ">
+                    <img src="images/pexels-cottonbro-studio-4429334.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top  rounded" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Goa</h5>
+                      <p class="card-text text-danger text-center"> (04 Nights / 05 Days)</p>
+                      <p class="card-text text-center" style="color: rgb(149, 144, 134);">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary d-flex justify-content-center" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center" style="padding-top: 20px;" >
+
+                <button class="btn btn-light " type="submit" style="margin: 20px;">MORE PACKAGES</button>
+
+            </div>
+            <p class="spclkrla">-special kerala festival tours-</p>
+        </div>
+<!-- carousel -->
+
+    <div class="container-fluid px-0 mx-0  variety">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/theyyam1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block d-md-block">
+                  <h5>THEYYAM</h5>
+                  <p>Fierce Artform of kerala.</p>
+                  <button class="btn btn-light " type="submit" style="margin: 20px;">DETAILS</button>
+                </div>
+              </div>
+              <div class="carousel-item"  data-bs-interval="2000">
+                <img src="images/kathakali.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block d-md-block">
+                  <h5>KATHAKALI</h5>
+                  <p>Traditions kept Well.</p>
+                  <button class="btn btn-light " type="submit" style="margin: 20px;">DETAILS</button>
+                </div>
+              </div>
+              <div class="carousel-item"  data-bs-interval="2000" >
+                <img src="images/jatayu.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block d-md-block">
+                  <h5>JATAYU</h5>
+                  <p>The Earths center.</p>
+                  <button class="btn btn-light " type="submit" style="margin: 20px;">DETAILS</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div> 
+    </div>
+
+    <!-- yt and grid -->
+    <div class="container-fluid px-0 mx-0 balance">
+        <div class="row">
+            <div class="col">
+                <iframe class="ytvd" style="border: 2px solid rgb(99, 75, 75); margin: 20px; filter: brightness(60%);" width="560" height="315" src="https://www.youtube.com/embed/s3G2kLruJJo?si=T8XRdLGTzaZUtsvn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col  container">
+                <!-- grid image -->
+                <p style="margin: 20px; font-size: 25px;color: rgb(135, 132, 132);font-weight: 400;text-align: center;">- Embark on a journey of discovery, where every destination is a chapter waiting to be written, and every experience is a story waiting to be told; let our travel website be your compass to navigate the world's wonders and create unforgettable memories along the way -</p>
+
+            </div>
+        </div>
+        <div class="container-fluid px-0 mx-0 ">
+            <p class="spclkrla">-NORTH INDIAN TOURS-</p>
+            <!-- northindia cards -->
+            <div class="balance" style="height: 100vh;overflow-x: hidden;">
+                <div class="row " style="margin-top: 10px; ">
+                    <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496);">
+                        <img src="images/varanasi.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top  rounded" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Varanasi</h5>
+                          <a href="#" class="btn btn-primary d-flex justify-content-center" >Details</a>
+                        </div>
+                    </div>
+                    <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496);">
+                        <img src="images/dal kashmir.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top  rounded" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Kashmir</h5>                     
+                          <a href="#" class="btn btn-primary d-flex justify-content-center" >Details</a>
+                        </div>
+                    </div>
+                    <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496);" >
+                        <img src="images/amritsar.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Amritsar</h5>
+                          <a href="#" class="btn btn-primary d-flex justify-content-center" >Details</a>
+                        </div>
+                    </div>
+                    <div class="col-3 card m-lg-auto zoom" style="width: 18rem;background-color: rgba(7, 16, 46, 0.496); ">
+                        <img src="images/ladakh.jpg" style="height: 200px; padding-top: 10px;" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center" style="color: rgb(255, 255, 255);">Ladakh</h5>
+                          <a href="#" class="btn btn-primary d-flex justify-content-center" >Details</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="spclkrla" style="margin: 20px;">-our premium features-</p>
+
+                <!-- cards -->
+                <!-- <div class="container-fluid  px-0 mx-0"> -->
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-3 m-lg-auto " style="width: 18rem; "> <!--background-color: rgba(7, 16, 46, 0.496);-->
+                            <div class="flipcardinner">
+
+                                <div class="flipcardfront">
+                                    <img src="images/rent.jpg" style="height: 200px; "  class="card-img-top " alt="...">
+                                    <div class="text-block">
+                                        <h4>Bike Rental</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-3 m-lg-auto " style="width: 18rem; "> <!--background-color: rgba(7, 16, 46, 0.496);-->
+                            <div class="flipcardinner">
+
+                                <div class="flipcardfront">
+                                    <img src="images/bonfire.jpg" style="height: 200px; "  class="card-img-top " alt="...">
+                                    <div class="text-block">
+                                        <h4>Campfire</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-3 m-lg-auto " style="width: 18rem; "> <!--background-color: rgba(7, 16, 46, 0.496);-->
+                            <div class="flipcardinner">
+
+                                <div class="flipcardfront">
+                                    <img src="images/teamwork.jpg" style="height: 200px; "  class="card-img-top " alt="...">
+                                    <div class="text-block">
+                                        <h4>24x7 Support</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-3 m-lg-auto " style="width: 18rem; "> <!--background-color: rgba(7, 16, 46, 0.496);-->
+                            <div class="flipcardinner">
+
+                                <div class="flipcardfront">
+                                    <img src="images/guided.jpg" style="height: 200px; "  class="card-img-top " alt="...">
+                                    <div class="text-block">
+                                        <h4>Guided Tours</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- footer -->
+
+                <!-- </div> -->
+                    
+
+            </div>
+            <div class="container-fluid mx-0 px-0 footer"  >
+                <!-- footer -->
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="">Home</a> </li>
+                            <li><a href="">News</a> </li>
+                            <li><a href="">About</a> </li>
+                            <li><a href="">Contact Us</a> </li>
+                            <li><a href="">Our Team</a> </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2024; Designed by <span class="designer">Neeraj</span> </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+
+</div>
+   
+</body>
+</html>

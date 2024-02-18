@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bgimage{
+    background: url(images/forest-5375005_1920.jpg) #c53a3a4d;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* @media(max-width: 991px){
+    .sidebar{
+        background-color:rgb(355, rgb(65, 113, 65), rgb(39, 39, 135));
+        backdrop-filter: blur(10px);
+    }
+} */
+@media(max-width: 991px){
+    div.sideebarr{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* div.modal{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+} */
+
+div.leftover{
+    /* height: 100vh; */
+    background: rgb(32,32,56);
+    background: linear-gradient(180deg, rgba(32,32,56,1) 0%, rgba(93,85,100,1) 45%);
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+.hnymn{
+    font-size: 45px;
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* div.card{
+    background-color: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+
+} */
+/* .slider{
+    min-height: fit-content;
+} */
+
+
+
+
+.zoom {
+    transition: transform .6s; 
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+
+  div.balance{
+    background-color: rgba(93,85,100,155);
+    /* height: 100vh; */
+  }
+
+  @media(max-width: 991px){
+    div.variety{
+        height:fit-content;
+    }
+    iframe.ytvd{
+        height: 200px;
+        width: 250px;
+    }
+    div.carousel-caption{
+        font-size: 10px;
+        height: 12px;
+    }
+}
+
+p.spclkrla{
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: antiquewhite;
+}
+
+div.flipcardinner{
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.286);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(0, 3, 31);
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* hover effect on icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: rgb(0, 3, 31);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media(max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #010d3e;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
